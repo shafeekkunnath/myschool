@@ -1,9 +1,59 @@
 <html>
-<head>
-<title>jmhss.com</title>
-</head>
-<body>
-<h1>My School</h1>
-<p>Jmhss is the popular school in tirur.</p>
-</body>
+    <head>
+        <style>
+            button{
+                background-color:antiquewhite;
+                border: 0px solid green;
+                padding: 10px;
+                font-size:small;
+                border-radius: 12px;
+                display: block;
+            }
+            .sq:hover
+            {
+                background-color: brown;
+                color: azure;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                overflow: hidden;
+                cursor: pointer;
+
+            }
+            .ac:hover
+            {
+                background-color:crimson;
+                color: black;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+            .p2:hover
+            {
+                background-color:cadetblue;
+                color: azure;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+            .p3:hover
+            {
+                background-color:coral;
+                color: azure;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+            .rc:hover
+            {
+                background-color:yellow;
+                color:black;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+        </style>
+    </head>
+    <body>
+        <button class="sq" onclick="alert(`Cart Quantity : ${cartQuantity}`);">Show Quantity</button>
+        <button class="ac" onclick=" cartQuantity=cartQuantity+1;
+        alert(`A new item added to the cart. Total Cart : ${cartQuantity}`);">Add to Cart</button>
+        <button class="p2" onclick="cartQuantity=cartQuantity+2;
+        alert(`2 additional items added to the cart : Total Cart : ${cartQuantity}`)">+2</button>
+        <button class="rc" onclick="cartQuantity=0
+        alert(`Cart Reset. Cart Count : ${cartQuantity}`);">Reset Cart</button>
+        <script>
+            let cartQuantity=0;
+        </script>
+    </body>
 </html>
